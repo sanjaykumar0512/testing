@@ -1,0 +1,62 @@
+<html>
+<head>
+<body>
+<script>
+ function func()
+ {
+      var a=document.getElementById("s1").value;
+	  if(a=="ug")
+	  {
+	    document.getElementById("s2").disabled=false;
+	   }
+	  else if (a=="pg")
+	  {
+	    document.getElementById("s3").disabled=false;
+	   }
+	   else if (a=="ph.d")
+	   {
+	    document.getElementById("s4").disabled=false;
+	   }
+	   else
+	   {
+	   document.getElementById("s2").disabled=true;
+	   document.getElementById("s3").disabled=true;
+	   document.getElementById("s4").disabled=true;
+	   }
+	   
+	   
+ } 
+ </script>  
+<form>
+  <p style="font-size:160%;color:black"> 
+  qualification  <select id="s1" onchange="func()" >
+  <option value=""></option>
+  <option value="ug">ug</option>
+  <option value="pg">pg</option>
+  <option value="ph.d">ph.d</option>
+    </select>
+  <p style="font-size:160%;color:white"> 
+    <select id="s2" disabled>dropdown 1
+  <option value=""></option>
+  <option value="arts">arts</option>
+  <option value="eng">eng</option>
+  <option value="med">med</option>
+    </select>
+   <p style="font-size:160%;color:white"> 
+    <select id="s3" disabled>dropdown 2
+  <option value=""></option>
+  <option value="arts">arts</option>
+  <option value="eng">eng</option>
+  <option value="med">med</option>
+    </select>
+   <p style="font-size:160%;color:white"> 
+    <select id="s4" disabled>dropdown 3
+  <option value=""></option>
+  <option value="arts">arts</option>
+  <option value="eng">eng</option>
+  <option value="med">med</option>
+    </select>
+ </form>
+ </body>
+ </head>
+ </html>
